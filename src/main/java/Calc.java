@@ -6,6 +6,7 @@ public class Calc {
         i = i;
         i1 = i1;
     }
+    //un comentario
     public Integer sumar(){
         return i+i1;
     }
