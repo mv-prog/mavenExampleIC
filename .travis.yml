@@ -1,5 +1,13 @@
 sudo: false
+addons:
+  sonarcloud:
+    organization: "mv-prog"
+    token:
+      secure: "7f06d367b44887b7d1066ff239b7e5a939f32461"
+
 jdk:
   - openjdk8
 language: java
-script: mvn test 
+script:
+  - mvn test
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=mv-prog_mavenExampleIC
