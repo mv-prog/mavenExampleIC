@@ -1,9 +1,9 @@
 sudo: false
 addons:
   sonarcloud:
-    organization: "mv-prog"
+    organization: "mvp-org"
     token:
-      secure: "7f06d367b44887b7d1066ff239b7e5a939f32461"
+      secure: "4c3d019e5ce2111f2c551010869a71c881e86f21"
 
 jdk:
   - openjdk8
